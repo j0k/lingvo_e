@@ -1,7 +1,7 @@
 NB. work with example files: eng.txt, rus.txt
 
 load '0le.ijs'
-load '~J0kutils/boxcyc.ijs'
+load '~J0kutils/boxcyc.ijs'	NB. form git: j0k/ju
 
 ex      =:  'eng.txt';'rus.txt'
 reordex =:  're_'&, L:0 ex
@@ -15,7 +15,7 @@ writef  =: 1!:2
 dat     =: ucp@readf@< L:0 ex
 redat   =: re each dat
 
-NB. ]str =: ((i.20)&{) each redat
+NB. ]str =: ((i.20)&{) each redat                   NB. first 20 letters
 NB. ]s2w =: (;)`'' (boxcyc L:1) cross (reordex;<str)
 NB. ┌─────────────────────────────────┬────────────────────────────────────────────────────┐
 NB. │┌──────────┬────────────────────┐│┌──────────┬───────────────────────────────────────┐│
