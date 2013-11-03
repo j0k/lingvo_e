@@ -8,6 +8,7 @@ Linguistics experiment with reordering letters in the word
 - 0le.ijs          : verb re & wRe
 - 0workwith.ijs    : example of working with txt-files
 - eng.txt, rus.txt : example of text
+- reorder.sh       : J-bash script : echo Hello reordered world\! | ./reorder.sh
 
 
 
