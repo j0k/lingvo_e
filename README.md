@@ -12,7 +12,7 @@ Linguistics experiment with reordering letters in the word
     - jhs/lingvoe-jhs.ijs : J-JHS-JS script: 
                             load '~j0def/lingvo_e/jhs/lingvoe-jhs.ijs'
                             openlingvoe ''
-			    NB. or open in newpage =~ http://127.0.0.1:65001/lingvoejhs
+                            NB. or open in newpage =~ http://127.0.0.1:65001/lingvoejhs
 
 
 
