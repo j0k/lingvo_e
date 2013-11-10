@@ -5,6 +5,7 @@ coclass 'lingvoejhs'
 coinsert 'jhs'
 
 load '~j0def/lingvo_e/0le.ijs'
+load 'unicode'
 
 openpage =: 3 : 'jjs ''window.open("http://'',(gethv_jhs_ ''Host:''),''/'',(>y),''","_blank");'' '
 openlingvoe_z_ =: 3 : 'openpage_lingvoejhs_ ''lingvoejhs'' '
@@ -19,11 +20,11 @@ HBS=:  0 : 0
         jhh1 'Reorder letters in words'
 
 'txt'   jhtextarea_wrapon 'I would like to reorde THIS-TEXT, Mr. Anderson!';10;100
-jhbr,jhbr
+	jhbr,jhbr
 'flip'  jhb 'proccess'    
-jhbr,jhbr
+	jhbr,jhbr
 'retxt' jhtextarea_wrapon 'more text';10;100
-       desc  
+        desc  
     NB. jhdemo''
 )
 
@@ -32,9 +33,9 @@ create=: 3 : 0
 )
 
 ev_flip_click=: 3 : 0
-NB. smoutput seebox NV ???
-txt=. getvs 'txt'
-jhrajax (re txt)
+NB. smoutput seebox NV
+'txt some'=. getvs 'txt txt'	NB. with some unicode doesn't work??? wtf txt =. getvs 'txt'
+jhrajax ( utf8 re ucp txt)
 )
 
 jev_get=: create NB. browser get request
